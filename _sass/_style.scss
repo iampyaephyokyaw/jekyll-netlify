@@ -91,7 +91,26 @@ hr {
   margin: 2em 0;
 }
 
-/* Style for the Recent Notes list */
-li a {
-  background-color: transparent;
+/* Link styles */
+a {
+    transition: background 300ms;
+    padding: 0 0.1em;
+    background-color: transparent;
+    text-decoration: underline; /* Add underline to all links */
+    color: var(--flexoki-tx);
+    &:hover {
+        color: var(--flexoki-cyan);
+    }
+    &:after {
+        position: relative;
+        top: -0.5em;
+        font-size: 0.7em;
+        content: "↗";
+        color: var(--flexoki-tx);
+    }
+    &.internal-link:after,
+    &.footnote:after,
+    &.reversefootnote:after {
+        content: "";
+    }
 }
