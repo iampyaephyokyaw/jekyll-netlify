@@ -104,3 +104,15 @@ a {
         content: "";
     }
 }
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--flexoki-bg);
+        color: var(--flexoki-tx);
+    }
+
+    a {
+        color: var(--flexoki-cyan); /* Changed to Flexoki cyan */
+        background-color: transparent;
+  }
