@@ -86,18 +86,18 @@ hr {
 a {
     transition: background 300ms;
     padding: 0 0.1em;
-    background-color: transparent;
+    background-color: var(--flexoki-bg);
     text-decoration: underline; /* Add underline to all links */
-    color: var(--flexoki-tx);
+    color: var(--flexoki-cyan);
     &:hover {
-        color: var(--flexoki-cyan);
+        color: var(--flexoki-blue);
     }
     &:after {
         position: relative;
         top: -0.5em;
         font-size: 0.7em;
-        content: "↗";
-        color: var(--flexoki-tx);
+        content: "🔗";
+        color: var(--flexoki-cyan);
     }
     &.internal-link:after,
     &.footnote:after,
