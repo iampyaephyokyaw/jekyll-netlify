@@ -28,15 +28,6 @@ body {
   padding: 0;
 }
 
-a {
-  color: var(--flexoki-cyan);
-  text-decoration: underline;
-
-  &:hover {
-    color: var(--flexoki-blue);
-  }
-}
-
 h1, h2, h3, h4, h5, h6 {
   color: var(--flexoki-tx);
   font-weight: bold;
